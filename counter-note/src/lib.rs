@@ -7,6 +7,8 @@
 // extern crate alloc;
 // use alloc::vec::Vec;
 
+use miden_harness_macros::*;
+
 #[cfg(not(test))]
 mod component {
     use miden::*;
@@ -23,10 +25,16 @@ mod component {
     }
 }
 
-#[cfg(test)]
+// use miden_harness_lib as __miden_harness_lib;
+#[miden_tests]
 mod tests {
-    #[test]
-    fn hola() {
+    #[miden_harness_macros::miden_test]
+    fn bar() {
         assert_eq!(1, 1 + 1)
+    }
+
+    #[miden_harness_macros::miden_test]
+    fn foo() {
+        assert_eq!(2, 1 + 1)
     }
 }

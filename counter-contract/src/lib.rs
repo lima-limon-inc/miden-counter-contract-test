@@ -6,7 +6,7 @@
 //
 // extern crate alloc;
 
-use miden_harness_macros::miden_tests;
+use miden_harness_macros::miden_test_block;
 
 #[cfg(not(test))]
 mod component {
@@ -39,7 +39,7 @@ mod component {
     }
 }
 
-#[miden_tests]
+#[miden_test_block]
 mod tests {
     #[miden_test]
     fn bar() {

@@ -7,17 +7,22 @@
 // extern crate alloc;
 // use alloc::vec::Vec;
 
-use miden::*;
+#[cfg(not(test))]
+mod component {
+    use miden::*;
 
-use crate::bindings::miden::counter_contract::counter_contract;
+    use self::bindings::miden::counter_contract::counter_contract;
 
-#[note_script]
-fn run(_arg: Word) {
-    let initial_value = counter_contract::get_count();
-    counter_contract::increment_count();
-    let expected_value = initial_value + Felt::from_u32(1);
-    let final_value = counter_contract::get_count();
-    assert_eq(final_value, expected_value);
+    #[note_script]
+    fn run(_arg: Word) {
+        let initial_value = counter_contract::get_count();
+        counter_contract::increment_count();
+        let expected_value = initial_value + Felt::from_u32(1);
+        let final_value = counter_contract::get_count();
+        assert_eq(final_value, expected_value);
+    }
+}
+
 #[cfg(test)]
 mod tests {
     #[test]

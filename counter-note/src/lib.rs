@@ -18,4 +18,10 @@ fn run(_arg: Word) {
     let expected_value = initial_value + Felt::from_u32(1);
     let final_value = counter_contract::get_count();
     assert_eq(final_value, expected_value);
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn hola() {
+        assert_eq!(1, 1 + 1)
+    }
 }

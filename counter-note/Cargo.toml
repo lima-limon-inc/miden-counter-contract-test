@@ -14,6 +14,8 @@ crate-type = ["cdylib"]
 # Miden SDK consists of a stdlib (intrinsic functions for VM ops, stdlib functions and types)
 # and transaction kernel API for the Miden rollup
 miden = { git = "https://github.com/0xMiden/compiler" }
+miden-harness-macros  = { path = "/Users/fabri/Repositories/miden-custom-test/crates/test-macros" }
+miden-harness-lib  = { path = "/Users/fabri/Repositories/miden-custom-test/crates/test-lib" }
 
 [package.metadata.miden]
 project-kind = "note-script"

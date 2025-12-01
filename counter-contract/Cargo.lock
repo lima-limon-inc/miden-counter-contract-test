@@ -797,6 +797,7 @@ checksum = "32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0"
 [[package]]
 name = "miden"
 version = "0.7.1"
+source = "git+https://github.com/0xMiden/compiler#6b77a370a54876e689951465716c6b4946e7e0dd"
 dependencies = [
  "miden-base",
  "miden-base-sys",
@@ -856,6 +857,7 @@ dependencies = [
 [[package]]
 name = "miden-base"
 version = "0.7.1"
+source = "git+https://github.com/0xMiden/compiler#6b77a370a54876e689951465716c6b4946e7e0dd"
 dependencies = [
  "miden-base-macros",
  "miden-base-sys",
@@ -865,6 +867,7 @@ dependencies = [
 [[package]]
 name = "miden-base-macros"
 version = "0.7.1"
+source = "git+https://github.com/0xMiden/compiler#6b77a370a54876e689951465716c6b4946e7e0dd"
 dependencies = [
  "heck",
  "miden-objects",
@@ -878,6 +881,7 @@ dependencies = [
 [[package]]
 name = "miden-base-sys"
 version = "0.8.0"
+source = "git+https://github.com/0xMiden/compiler#6b77a370a54876e689951465716c6b4946e7e0dd"
 dependencies = [
  "miden-stdlib-sys",
 ]
@@ -1056,10 +1060,12 @@ dependencies = [
 [[package]]
 name = "miden-sdk-alloc"
 version = "0.7.0"
+source = "git+https://github.com/0xMiden/compiler#6b77a370a54876e689951465716c6b4946e7e0dd"
 
 [[package]]
 name = "miden-stdlib-sys"
 version = "0.7.1"
+source = "git+https://github.com/0xMiden/compiler#6b77a370a54876e689951465716c6b4946e7e0dd"
 
 [[package]]
 name = "miden-utils-diagnostics"

@@ -37,3 +37,8 @@ trim-paths = ["diagnostics", "object"]
 
 [profile.dev]
 trim-paths = ["diagnostics", "object"]
+
+[[test]]
+name = "lib"
+path = "src/lib.rs"
+harness = false

@@ -11,6 +11,8 @@ crate-type = ["cdylib"]
 
 [dependencies]
 miden = { git = "https://github.com/0xMiden/compiler" }
+miden-harness-macros  = { path = "/Users/fabri/Repositories/miden-custom-test/crates/test-macros" }
+miden-harness-lib  = { path = "/Users/fabri/Repositories/miden-custom-test/crates/test-lib" }
 
 [package.metadata.component]
 package = "miden:counter-contract"
@@ -18,3 +20,8 @@ package = "miden:counter-contract"
 [package.metadata.miden]
 project-kind = "account"
 supported-types = ["RegularAccountUpdatableCode"]
+
+[[test]]
+name = "lib"
+path = "src/lib.rs"
+harness = false

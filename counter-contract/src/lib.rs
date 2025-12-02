@@ -41,9 +41,12 @@ mod component {
 
 #[miden_test_block]
 mod tests {
+    use winter_utils::Deserializable;
+
     #[miden_test]
     fn bar() {
-        assert_eq!(1, 1 + 1)
+        std::dbg!(&package);
+        assert_eq!(1, 1 + 1);
     }
 
     #[miden_test]

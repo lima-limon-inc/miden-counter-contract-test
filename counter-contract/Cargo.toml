@@ -12,7 +12,11 @@ crate-type = ["cdylib"]
 [dependencies]
 miden = { git = "https://github.com/0xMiden/compiler" }
 miden-harness-macros  = { path = "/Users/fabri/Repositories/miden-custom-test/crates/test-macros" }
+
+[dev-dependencies]
 miden-harness-lib  = { path = "/Users/fabri/Repositories/miden-custom-test/crates/test-lib" }
+miden-mast-package = "0.19.1"
+winter-utils = "0.13.1"
 
 [package.metadata.component]
 package = "miden:counter-contract"

@@ -1,5 +1,5 @@
 // Do not link against libstd (i.e. anything defined in `std::`)
-#![no_std]
+#![cfg_attr(not(test), no_std)]
 
 // However, we could still use some standard library types while
 // remaining no-std compatible, if we uncommented the following lines:
